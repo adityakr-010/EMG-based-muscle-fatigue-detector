@@ -1,12 +1,12 @@
-# EMG Fatigue Detection System using ESP32 + Python
+# EMG Fatigue Detection System using Arduino R4 + Python
 
-Real-time EMG (Electromyography) signal acquisition, filtering, frequency analysis, and muscle fatigue detection using ESP32 and Python visualization dashboard.
+Real-time EMG (Electromyography) signal acquisition, filtering, frequency analysis, and muscle fatigue detection using Arduino R4 and Python visualization dashboard.
 
 ---
 
 # Features
 
-- Real-time EMG signal acquisition using ESP32
+- Real-time EMG signal acquisition using Arduino R4
 - Double-buffered high-speed ADC sampling
 - Digital signal filtering:
   - High-pass filter
@@ -17,19 +17,19 @@ Real-time EMG (Electromyography) signal acquisition, filtering, frequency analys
 - Median Frequency (MDF) extraction
 - Muscle fatigue detection using MDF drop
 - Live Python dashboard visualization
-- JSON serial communication between ESP32 and PC
+- JSON serial communication between Arduino R4 and PC
 
 ---
 
 # System Architecture
 
-EMG Sensor → ESP32 ADC → Signal Filtering → FFT + Feature Extraction → Serial JSON → Python Dashboard
+EMG Sensor → Arduino R4 ADC → Signal Filtering → FFT + Feature Extraction → Serial JSON → Python Dashboard
 
 ---
 
 # Hardware Used
 
-- ESP32
+- Arduino R4
 - EMG sensor / bio-signal acquisition circuit
 - Electrodes
 - USB Serial Communication
@@ -40,7 +40,7 @@ EMG Sensor → ESP32 ADC → Signal Filtering → FFT + Feature Extraction → S
 
 ## Embedded
 - Arduino IDE
-- ESP32
+- Arduino R4
 - ArduinoFFT Library
 
 ## PC Dashboard
@@ -144,7 +144,7 @@ The dashboard automatically detects muscle fatigue using MDF reduction.
 
 # Serial Communication Format
 
-ESP32 sends JSON packets:
+Arduino R4 sends JSON packets:
 
 ```json
 {
@@ -176,7 +176,7 @@ git clone https://github.com/adityakr-010/EMG-based-muscle-fatigue-detector.git
 - ArduinoFFT
 
 ## Upload Code
-Upload the ESP32 firmware using Arduino IDE.
+Upload the Arduino R4 firmware using Arduino IDE.
 
 ---
 
