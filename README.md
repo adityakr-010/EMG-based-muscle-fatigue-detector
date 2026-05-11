@@ -113,6 +113,34 @@ The dashboard displays:
 - Fatigue Status Indicator
 
 ---
+# Dashboard Preview
+
+## Real-Time EMG Monitoring Dashboard
+
+The system visualizes:
+
+- Raw EMG signal
+- Filtered EMG signal
+- Frequency spectrum
+- RMS trend
+- Median Frequency (MDF) trend
+- Muscle fatigue detection status
+
+### Example Output
+
+![EMG Dashboard](images/dashboard.png)
+
+---
+
+# Example Fatigue Detection
+
+The dashboard automatically detects muscle fatigue using MDF reduction.
+
+- Green → Normal muscle condition
+- Red → Fatigued state
+- Yellow → Calibration phase
+
+![Fatigue Detection](images/fatigue_detection.png)
 
 # Serial Communication Format
 
